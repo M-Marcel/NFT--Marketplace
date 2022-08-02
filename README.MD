@@ -71,7 +71,7 @@ You'll want to set your `KOVAN_RPC_URL` and `PRIVATE_KEY` as environment variabl
 
 Head over to [faucets.chain.link](https://faucets.chain.link/) and get some tesnet ETH. You should see the ETH show up in your metamask.
 
-3. Deploy
+3. Deploy.
 
 ```
 yarn hardhat deploy --network kovan
