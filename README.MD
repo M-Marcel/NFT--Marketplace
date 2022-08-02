@@ -4,7 +4,7 @@
  - Identity decentralization using blockchain
  - Decentralized experience aggregation system
 
-Jump on the discussion (https://github.com/M-Marcel/NFT--Marketplace/discussions) as w decide on which to start.
+Jump on the discussion (https://github.com/M-Marcel/NFT--Marketplace/discussions) as we decide on which to start.
 
 
 
