@@ -1,4 +1,12 @@
-# Decentralized NFT Marketplace 
+# Boilerplate smart contract for a decentralized NFT Marketplace 
+
+## Here are a few Open source projects we are proposing 
+ - Identity decentralization using blockchain
+ - Decentralized experience aggregation system
+
+Jump on the discussion (https://github.com/M-Marcel/NFT--Marketplace/discussions) as w decide on which to start.
+
+
 
 - [Hardhat NFT Marketplace](#hardhat-nft-marketplace)
 - [Getting Started](#getting-started)
