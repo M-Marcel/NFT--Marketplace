@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
@@ -26,7 +26,7 @@ contract NftMarketplace is ReentrancyGuard {
         uint256 price
     );
 
-    event ItemBrought(
+    event ItemBought(
         address indexed buyer,
         address indexed nftAddress,
         uint256 indexed tokenId,
@@ -132,7 +132,7 @@ contract NftMarketplace is ReentrancyGuard {
         delete (s_listings[nftAddress][tokenId]);
         IERC721(nftAddress).safeTransferFrom(listedItem.seller, msg.sender, tokenId);
         // check to make sure the NFT was transfered
-        emit ItemBrought(msg.sender, nftAddress, tokenId, listedItem.price);
+        emit ItemBought(msg.sender, nftAddress, tokenId, listedItem.price);
     }
 
     function cancelListing(address nftAddress, uint256 tokenId)

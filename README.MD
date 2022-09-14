@@ -95,3 +95,6 @@ ETH/Polygon/Avalanche/etc Address: 0x39d366c9D9A35BB0A01a27AF1e817Ee96b11d820
 [![Marcellus Nwankwo Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Marcel_di_Maria)
 [![Marcellus Nwankwo Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcellus-nwankwo/)
 
+1. Instead of reading from Moralis, we will 
+  1. Index them with TheGraph
+  2. Read from the graph

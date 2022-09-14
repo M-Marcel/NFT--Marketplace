@@ -17,6 +17,7 @@ const MAINNET_RPC_URL =
 const RINKEBY_RPC_URL =
     process.env.RINKEBY_RPC_URL || "https://eth-rinkeby.alchemyapi.io/v2/your-api-key"
 const KOVAN_RPC_URL = process.env.KOVAN_RPC_URL || "https://eth-kovan.alchemyapi.io/v2/your-api-key"
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "https://eth-kovan.alchemyapi.io/v2/your-api-key"
 const POLYGON_MAINNET_RPC_URL =
     process.env.POLYGON_MAINNET_RPC_URL || "https://polygon-mainnet.alchemyapi.io/v2/your-api-key"
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x"
@@ -63,6 +64,16 @@ module.exports = {
             chainId: 4,
             blockConfirmations: 6,
         },
+        goerli: {
+            url: GOERLI_RPC_URL,
+            accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+            //   accounts: {
+            //     mnemonic: MNEMONIC,
+            //   },
+            saveDeployments: true,
+            chainId: 5,
+            blockConfirmations: 6,
+        },
         mainnet: {
             url: MAINNET_RPC_URL,
             accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
@@ -86,6 +97,7 @@ module.exports = {
         apiKey: {
             rinkeby: ETHERSCAN_API_KEY,
             kovan: ETHERSCAN_API_KEY,
+            goerli: ETHERSCAN_API_KEY,
             polygon: POLYGONSCAN_API_KEY,
         },
     },
