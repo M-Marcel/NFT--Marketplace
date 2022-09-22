@@ -106,7 +106,7 @@ contract NftMarketplace is ReentrancyGuard {
             revert NftMarketplace__PriceMustBeAboveZero();
         }
         // Two methods of achieving this
-        // 1. Send the NFT to the contract (Market place) [Transfer]. i.e Contraact "hold" the NFT
+        // 1. Send the NFT to the contract (Market place) [Transfer]. i.e Contract "hold" the NFT
         // 2. Owners can still hold NFT but give marketplace approval to sell the NFT for them
         IERC721 nft = IERC721(nftAddress);
         if (nft.getApproved(tokenId) != address(this)) {

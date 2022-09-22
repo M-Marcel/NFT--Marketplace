@@ -93,9 +93,9 @@ const { developmentChains, networkConfig, networks } = require("../../helper-har
             it("exclusively items that haven't been listed", async function () {
                 await nftMarketplace.listItem(basicNft.address, TOKEN_ID, PRICE)
                 const error = `AlreadyListed("${basicNft.address}", ${TOKEN_ID})`
-                //   await expect(
-                //       nftMarketplace.listItem(basicNft.address, TOKEN_ID, PRICE)
-                //   ).to.be.revertedWith("AlreadyListed")
+                // await expect(
+                //     nftMarketplace.listItem(basicNft.address, TOKEN_ID, PRICE)
+                // ).to.be.revertedWith("AlreadyListed")
                 await expect(
                     nftMarketplace.listItem(basicNft.address, TOKEN_ID, PRICE)
                 ).to.be.revertedWith(error)
@@ -118,6 +118,7 @@ const { developmentChains, networkConfig, networks } = require("../../helper-har
                 const listing = await nftMarketplace.getListing(basicNft.address, TOKEN_ID)
                 assert(listing.price.toString() == PRICE.toString())
                 assert(listing.seller.toString() == deployer.address)
+
             })
         })
         describe("cancelListing", function () {
